@@ -6,11 +6,11 @@ create table Buildings(
 	Building nvarchar(100) NOT NULL
 );
 
-INSERT INTO Buildings(Building) VALUES ('A');
-INSERT INTO Buildings(Building) VALUES ('B');
-INSERT INTO Buildings(Building) VALUES ('C');
-INSERT INTO Buildings(Building) VALUES ('D');
-INSERT INTO Buildings(Building) VALUES ('E');
+INSERT INTO Buildings(Building) VALUES ('Building A');
+INSERT INTO Buildings(Building) VALUES ('Building B');
+INSERT INTO Buildings(Building) VALUES ('Building C');
+INSERT INTO Buildings(Building) VALUES ('Building D');
+INSERT INTO Buildings(Building) VALUES ('Building E');
 
 create table Customers(
 	PKCustomers int IDENTITY(1,1) PRIMARY KEY, 

@@ -26,6 +26,13 @@ namespace Jabil
 			bundles.Add(new StyleBundle("~/Content/css").Include(
 					  "~/Content/bootstrap.css",
 					  "~/Content/site.css"));
+
+			bundles.Add(new ScriptBundle("~/bundles/datatables").Include(
+				"~/vendors/datatables/datatables.min.js", 
+				"~/vendors/datatables/DataTables-1.10.16/js/dataTables.bootstrap.js"));
+
+			bundles.Add(new StyleBundle("~/vendors/datatables").Include(
+				"~/vendors/datatables/DataTables-1.10.16/css/dataTables.bootstrap.css"));
 		}
 	}
 }
