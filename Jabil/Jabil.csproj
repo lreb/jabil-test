@@ -185,6 +185,39 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="SQL_Scripts\Sql_script_database_jabil.sql" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.bootstrap.css" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.bootstrap.min.css" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.bootstrap4.css" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.bootstrap4.min.css" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.dataTables.css" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.dataTables.min.css" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.foundation.css" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.foundation.min.css" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.jqueryui.css" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.jqueryui.min.css" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.semanticui.css" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.semanticui.min.css" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.bootstrap.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.bootstrap.min.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.bootstrap4.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.bootstrap4.min.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.colVis.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.colVis.min.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.flash.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.flash.min.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.foundation.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.foundation.min.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.html5.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.html5.min.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.jqueryui.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.jqueryui.min.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.print.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.print.min.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.semanticui.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\buttons.semanticui.min.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\dataTables.buttons.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\js\dataTables.buttons.min.js" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\swf\flashExport.swf" />
     <Content Include="vendors\datatables\DataTables-1.10.16\css\dataTables.bootstrap.css" />
     <Content Include="vendors\datatables\DataTables-1.10.16\css\dataTables.bootstrap.min.css" />
     <Content Include="vendors\datatables\DataTables-1.10.16\css\dataTables.bootstrap4.css" />
@@ -218,6 +251,11 @@
     <Content Include="vendors\datatables\datatables.js" />
     <Content Include="vendors\datatables\datatables.min.css" />
     <Content Include="vendors\datatables\datatables.min.js" />
+    <Content Include="vendors\datatables\JSZip-2.5.0\jszip.js" />
+    <Content Include="vendors\datatables\JSZip-2.5.0\jszip.min.js" />
+    <Content Include="vendors\datatables\pdfmake-0.1.32\pdfmake.js" />
+    <Content Include="vendors\datatables\pdfmake-0.1.32\pdfmake.min.js" />
+    <Content Include="vendors\datatables\pdfmake-0.1.32\vfs_fonts.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -232,6 +270,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\common.scss" />
+    <Content Include="vendors\datatables\Buttons-1.5.1\css\mixins.scss" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

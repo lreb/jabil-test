@@ -29,10 +29,19 @@ namespace Jabil
 
 			bundles.Add(new ScriptBundle("~/bundles/datatables").Include(
 				"~/vendors/datatables/datatables.min.js", 
-				"~/vendors/datatables/DataTables-1.10.16/js/dataTables.bootstrap.js"));
+				"~/vendors/datatables/DataTables-1.10.16/js/jquery.dataTables.min.js",
+				"~/vendors/datatables/Buttons-1.5.1/js/dataTables.buttons.min.js",
+				"~/vendors/datatables/DataTables-1.10.16/js/dataTables.bootstrap.min.js",
+				"~/vendors/datatables/Buttons-1.5.1/js/buttons.flash.min.js",
+				"~/vendors/datatables/JSZip-2.5.0/jszip.min.js",
+				"~/vendors/datatables/pdfmake-0.1.32/pdfmake.min.js",
+				"~/vendors/datatables/pdfmake-0.1.32/vfs_fonts.js",
+				"~/vendors/datatables/Buttons-1.5.1/js/buttons.html5.min.js",
+				"~/vendors/datatables/Buttons-1.5.1/js/buttons.print.min.js"));
 
 			bundles.Add(new StyleBundle("~/vendors/datatables").Include(
-				"~/vendors/datatables/DataTables-1.10.16/css/dataTables.bootstrap.css"));
+				"~/vendors/datatables/DataTables-1.10.16/css/dataTables.bootstrap.min.css",
+				"~/vendors/datatables/Buttons-1.5.1/css/buttons.dataTables.min.css"));
 		}
 	}
 }

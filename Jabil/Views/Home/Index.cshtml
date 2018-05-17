@@ -40,7 +40,17 @@
 {
 	<script>
 		$(document).ready(function () {
-			$('#report-data-table').DataTable();
+			$('#report-data-table').DataTable({
+				dom: 'Bfrtip',
+				buttons: [
+					'copyHtml5',
+					'excelHtml5',
+					'csvHtml5',
+					'pdfHtml5',
+					'print'
+					//'copy', 'csv', 'excel', 'pdf', 'print'
+				]
+			});
 		});
 	</script>
 }
