@@ -21,6 +21,7 @@ namespace Jabil.Models
         [Column("Building")]
         [Required]
         [StringLength(100)]
+		[Display(Name ="Name")]
         public string Building1 { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
