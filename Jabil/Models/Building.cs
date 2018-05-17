@@ -12,7 +12,6 @@ namespace Jabil.Models
         public Building()
         {
             Customers = new HashSet<Customer>();
-            PartNumbers = new HashSet<PartNumber>();
         }
 
         [Key]
@@ -21,13 +20,10 @@ namespace Jabil.Models
         [Column("Building")]
         [Required]
         [StringLength(100)]
-		[Display(Name ="Name")]
-        public string Building1 { get; set; }
+		[Display(Name = "Name")]
+		public string Building1 { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Customer> Customers { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PartNumber> PartNumbers { get; set; }
     }
 }

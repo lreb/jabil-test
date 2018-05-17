@@ -8,7 +8,7 @@ namespace Jabil.Models
 	public partial class JabilModel : DbContext
 	{
 		public JabilModel()
-			: base("name=JabilConnectionString")
+			: base("name=JabilModelConnectionString")
 		{
 		}
 
@@ -23,9 +23,9 @@ namespace Jabil.Models
 				.WithOptional(e => e.Building)
 				.HasForeignKey(e => e.FKBuilding);
 
-			modelBuilder.Entity<Building>()
+			modelBuilder.Entity<Customer>()
 				.HasMany(e => e.PartNumbers)
-				.WithOptional(e => e.Building)
+				.WithOptional(e => e.Customer)
 				.HasForeignKey(e => e.FKCustomer);
 		}
 	}

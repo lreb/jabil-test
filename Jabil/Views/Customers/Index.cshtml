@@ -1,0 +1,40 @@
+﻿@model IEnumerable<Jabil.Models.Customer>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Index</h3>
+
+<p class="pull-right">
+    @Html.ActionLink("Create New", "Create", new { }, new { @class="btn btn-default"})
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prefix)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td class="col-md-6">
+            @Html.DisplayFor(modelItem => item.Customer1)
+        </td>
+        <td class="col-md-3">
+            @Html.DisplayFor(modelItem => item.Prefix)
+        </td>
+        <td class="col-md-3">
+            @Html.ActionLink("Edit", "Edit", new { id=item.PKCustomers }, new { @class = "btn btn-primary" }) 
+            @*Html.ActionLink("Details", "Details", new { id=item.PKCustomers }) |*@
+            @Html.ActionLink("Delete", "Delete", new { id=item.PKCustomers }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+}
+
+</table>

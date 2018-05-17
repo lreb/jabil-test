@@ -1,0 +1,43 @@
+﻿@model Jabil.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Building.Building1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Building.Building1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Customer1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Customer1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Prefix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Prefix)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PKCustomers }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

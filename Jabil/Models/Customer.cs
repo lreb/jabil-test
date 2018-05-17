@@ -8,13 +8,20 @@ namespace Jabil.Models
 
     public partial class Customer
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Customer()
+        {
+            PartNumbers = new HashSet<PartNumber>();
+        }
+
         [Key]
         public int PKCustomers { get; set; }
 
         [Column("Customer")]
         [Required]
         [StringLength(100)]
-        public string Customer1 { get; set; }
+		[Display(Name = "Name")]
+		public string Customer1 { get; set; }
 
         [Required]
         [StringLength(5)]
@@ -23,5 +30,8 @@ namespace Jabil.Models
         public int? FKBuilding { get; set; }
 
         public virtual Building Building { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<PartNumber> PartNumbers { get; set; }
     }
 }

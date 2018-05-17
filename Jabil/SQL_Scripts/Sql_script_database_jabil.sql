@@ -1,4 +1,7 @@
-﻿create database Jabil;
+﻿
+-- DROP DATABASE Jabil;
+
+create database Jabil;
 use Jabil;
 
 create table Buildings(
@@ -27,7 +30,7 @@ INSERT INTO Customers(Customer,Prefix,FKBuilding) VALUES ('Jessica Math','Eng',3
 create table PartNumbers(
 	PKPartNumber int IDENTITY(1,1) PRIMARY KEY, 
 	PartNumber nvarchar(50) NOT NULL,	
-	FKCustomer int FOREIGN KEY REFERENCES Buildings(PKBuilding),
+	FKCustomer int FOREIGN KEY REFERENCES Customers(PKCustomers),
 	Available bit NOT NULL
 );
 

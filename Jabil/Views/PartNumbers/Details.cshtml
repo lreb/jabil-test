@@ -1,0 +1,43 @@
+﻿@model Jabil.Models.PartNumber
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PartNumber</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Building.Building1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Building.Building1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PartNumber1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PartNumber1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Available)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Available)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PKPartNumber }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

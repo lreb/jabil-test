@@ -1,0 +1,46 @@
+﻿@model IEnumerable<Jabil.Models.PartNumber>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Parts</h3>
+
+<p class="pull-right">
+    @Html.ActionLink("Create New", "Create", new { }, new { @class = "btn btn-default" })
+</p>
+<table class="table">
+	<tr>
+		<th>
+			@Html.DisplayNameFor(model => model.PartNumber1)
+		</th>
+		<th>
+			@Html.DisplayNameFor(model => model.Available)
+		</th>
+		<th>
+			@Html.DisplayName("Building")
+		</th>
+		<th></th>
+	</tr>
+
+@foreach (var item in Model) {
+	<tr>
+		<td class="col-md-3">
+			@Html.DisplayFor(modelItem => item.PartNumber1)
+		</td>
+		<td class="col-md-3">
+			@Html.DisplayFor(modelItem => item.Available)
+		</td>
+		<td class="col-md-3">
+			@Html.DisplayFor(modelItem => item.Customer.Customer1)
+		</td>
+		<td class="col-md-3">
+			@Html.ActionLink("Edit", "Edit", new { id = item.PKPartNumber }, new { @class = "btn btn-primary" })
+			@*Html.ActionLink("Details", "Details", new { id=item.PKPartNumber }) | *@
+			@Html.ActionLink("Delete", "Delete", new { id = item.PKPartNumber }, new { @class = "btn btn-danger" })
+		</td>
+	</tr>
+}
+
+</table>
