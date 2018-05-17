@@ -1,6 +1,6 @@
-﻿create database x;
+﻿create database Jabil;
 
-use x;
+use Jabil;
 
 
 create table Buildings(
