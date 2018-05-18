@@ -1,8 +1,6 @@
 ﻿USE Jabil;  
 GO  
-CREATE PROCEDURE MainReport 
-    /*@LastName nvarchar(50),   
-    @FirstName nvarchar(50)*/   
+CREATE PROCEDURE MainReport  
 AS   
 
     SET NOCOUNT ON;  
