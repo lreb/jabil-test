@@ -39,7 +39,7 @@ namespace Jabil.Controllers
         // GET: PartNumbers/Create
         public ActionResult Create()
         {
-            ViewBag.FKCustomer = new SelectList(db.Buildings, "PKBuilding", "Building1");
+            ViewBag.FKCustomer = new SelectList(db.Customers, "PKCustomers", "Customer1");
             return View();
         }
 
@@ -57,7 +57,7 @@ namespace Jabil.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.FKCustomer = new SelectList(db.Buildings, "PKBuilding", "Building1", partNumber.FKCustomer);
+            ViewBag.FKCustomer = new SelectList(db.Customers, "PKCustomers", "Customer1", partNumber.FKCustomer);
             return View(partNumber);
         }
 
@@ -73,7 +73,7 @@ namespace Jabil.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.FKCustomer = new SelectList(db.Buildings, "PKBuilding", "Building1", partNumber.FKCustomer);
+            ViewBag.FKCustomer = new SelectList(db.Customers, "PKCustomers", "Customer1", partNumber.FKCustomer);
             return View(partNumber);
         }
 
@@ -90,7 +90,7 @@ namespace Jabil.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.FKCustomer = new SelectList(db.Buildings, "PKBuilding", "Building1", partNumber.FKCustomer);
+            ViewBag.FKCustomer = new SelectList(db.Customers, "PKCustomers", "Customer1", partNumber.FKCustomer);
             return View(partNumber);
         }
 
