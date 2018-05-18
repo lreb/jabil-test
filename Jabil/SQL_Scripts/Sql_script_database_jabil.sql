@@ -39,17 +39,3 @@ INSERT INTO PartNumbers(PartNumber,FKCustomer,Available) VALUES ('AB12C3',2,0);
 INSERT INTO PartNumbers(PartNumber,FKCustomer,Available) VALUES ('1A2B3C',3,0);
 INSERT INTO PartNumbers(PartNumber,FKCustomer,Available) VALUES ('123ABC',4,1);
 INSERT INTO PartNumbers(PartNumber,FKCustomer,Available) VALUES ('321ABC',4,1);
-
-SELECT * FROM Buildings;
-SELECT * FROM Customers;
-SELECT * FROM PartNumbers;
-
-SELECT * FROM PartNumbers pn 
-LEFT OUTER JOIN Customers c ON pn.FKCustomer = c.PKCustomers
-LEFT OUTER JOIN Buildings b ON c.FKBuilding  = b.PKBuilding
-order by pn.PartNumber
-
-SELECT * FROM PartNumbers pn 
-LEFT JOIN Customers c ON pn.FKCustomer = c.PKCustomers
-LEFT JOIN Buildings b ON c.FKBuilding  = b.PKBuilding
-order by pn.PartNumber

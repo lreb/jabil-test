@@ -188,6 +188,7 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="SQL_Scripts\Sql_script_database_jabil.sql" />
+    <Content Include="SQL_Scripts\Sql_script_storeprocedure_jabil.sql" />
     <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.bootstrap.css" />
     <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.bootstrap.min.css" />
     <Content Include="vendors\datatables\Buttons-1.5.1\css\buttons.bootstrap4.css" />
